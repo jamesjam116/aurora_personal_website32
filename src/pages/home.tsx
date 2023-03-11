@@ -12,13 +12,13 @@ export default function Home() {
             <div id="home" className="relative flex flex-row justify-between pl-6 lg:pl-[100px] ">
                 {/* eslint-disable-next-line */}
 
-                <img className="absolute top-0 left-0 w-full h-full -z-29" src="/img/6.jpg" alt="" />
+                <img className="object-cover absolute top-0 left-0 w-full h-full -z-29" src="/img/6.jpg" alt="" />
                 <Header />
                 <div className="container mx-auto flex z-0 md:flex-row flex-col">
                     <div className="md:w-[calc(100%-360px)] w-full lg:w-[calc(100%-500px)] my-[300px]">
                         <p className="text-[16px] text-white-100 mb-2 font-bold">WELCOME TO MY WEBSITE</p>
                         <p className="text-[45px] text-white-100 font-black">
-                            Hi,This is <span className="text-[#50BEC2]">Frank Till</span>
+                            Hi,This is <span className="text-[#50BEC2]">Anthony Kunitaro</span>
                             <br />
                             <Typewriter
                                 words={['Frontend developer', 'Backend developer', 'Blockchain developer', 'Web3 developer']}
@@ -97,7 +97,7 @@ export default function Home() {
                 </div>
             </div>
             <div id="whatido" className="relative flex flex-col">
-                <img className="absolute top-0 left-0 w-full h-full -z-50" src="/img/2.jpg" alt="" />
+                <img className="absolute top-0 left-0 w-full h-full -z-50 object-cover" src="/img/2.jpg" alt="" />
                 <p className="text-white text-[40px] font-semibold text-center py-5">What I Do</p>
                 <div className="container mx-auto mt-10 flex lg:flex-row gap-8 flex-col">
                     <div className="flex flex-col lg:w-1/3 w-full z-10 border-l-[1px] px-4">
@@ -133,35 +133,53 @@ export default function Home() {
             </div>
             <div id="portfolio" className="flex flex-col z-10 pb-20" style={{ backgroundImage: "url('/img/3(1).jpg')" }}>
                 <p className="text-white text-[40px] font-semibold text-center py-[50px]">Portfolio</p>
-                <div className="container z-5 gap-5 mx-auto flex flex-wrap justify-center">
-                    <a href="https://goblinarmy.io/" className="lg:w-1/4 w-full rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p2.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p2.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p3.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p4.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p5.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p6.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p4.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p5.png" alt="" ></img>
-                    </a>
-                    <a href="https://goblinarmy.io/" className="w-full lg:w-1/4 rounded-[10px] hover:scale-110 transition-transform duration-200 cursor-pointer" target={"_blank"} rel="noreferrer">
-                        <img className="rounded-[10px]" src="/img/p6.png" alt="" ></img>
-                    </a>
+                <div className="container mx-auto flex flex-col lg:flex-row">
+
+                    <div className="flex flex-col gap-2 mx-auto  w-2/3">
+                        <div className="flex xm:flex-row flex-col shadow-drop-shadow rounded-[20px] items-center justify-center p-4 mb-4">
+                            <img className="xm:w-[280px] w-full" src="/img/p1.png" alt="" />
+                            <div className="flex flex-col ml-14 items-center">
+                                <p className="text-white text-[30px] font-bold">Blockchain Development</p>
+                                <a className="text-[#4297aa] mb-2" href="https://foxfinance.io/Marketplace">https://foxfinance.io/Marketplace</a>
+                                <p className="text-white-60 text-[14px]">I updated this page. Before I worked, NFT cards were not allowed to change their properties once made. Then I add the functions to CHANGE the price and quantities and MAKE a new card. Of course, I also rebuilt the website using Nuxt.js and Web3 and the smart contract of the marketplace by using Solidity.</p>
+                            </div>
+                        </div>
+
+                        <div className="flex xm:flex-row flex-col shadow-drop-shadow rounded-[20px] items-center justify-center p-4 mb-4">
+                            <img className="xm:w-[280px] w-full" src="/img/p2.png" alt="" />
+                            <div className="flex flex-col ml-14 items-center">
+                                <p className="text-white text-[30px] font-bold">Solana Web3 Frontend Development</p>
+                                <a className="text-[#4297aa] mb-2" href="https://foxfinance.io/Marketplace">https://www.shreddedapes.io/</a>
+                                <p className="text-white-60 text-[14px]">SAGC Landing page. I made the Landing page with Next.js an Web3.js. Introducing roadmaps, staking, bootcamps, webshops, and more.</p>
+                            </div>
+                        </div>
+                        <div className="flex xm:flex-row flex-col shadow-drop-shadow rounded-[20px] items-center justify-center p-4 mb-4">
+                            <img className="xm:w-[280px] w-full" src="/img/p3.png" alt="" />
+                            <div className="flex flex-col ml-14 items-center">
+                                <p className="text-white text-[30px] font-bold">Frontend Development</p>
+                                <a className="text-[#4297aa] mb-2" href="https://foxfinance.io/Marketplace">https://moduluc.com/</a>
+                                <p className="text-white-60 text-[14px]">The concept refers to the name - Moduluc, or modules, which are the building blocks of the Metaverse.</p>
+                            </div>
+                        </div>
+                        <div className="flex xm:flex-row flex-col shadow-drop-shadow rounded-[20px] items-center justify-center p-4 mb-4">
+                            <img className="xm:w-[280px] w-full" src="/img/p4.png" alt="" />
+                            <div className="flex flex-col ml-14 items-center">
+                                <p className="text-white text-[30px] font-bold">Solana Fullstack Development</p>
+                                <a className="text-[#4297aa] mb-2" href="https://foxfinance.io/Marketplace">https://mausoleum.tombstoned.xyz/</a>
+                                <p className="text-white-60 text-[14px]">Building Full Stack dapps with React, Solana, Anchor, and Phantom wallet. NFT Raffle, Auction. The Mausoleum projec</p>
+                            </div>
+                        </div>
+                        <div className="flex xm:flex-row flex-col shadow-drop-shadow rounded-[20px] items-center justify-center p-4 mb-4">
+                            <img className="xm:w-[280px] w-full" src="/img/p6.png" alt="" />
+                            <div className="flex flex-col ml-14 items-center">
+                                <p className="text-white text-[30px] font-bold">Solana/AWS Fullstack Development</p>
+                                <a className="text-[#4297aa] mb-2" href="https://foxfinance.io/Marketplace">https://game.solarmy.io/</a>
+                                <p className="text-white-60 text-[14px]">Building Full Stack dapps with React, Solana, Anchor, and Phantom wallet. Solarmy | NFT Game | NFT Staking | Fusion</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
             <div id="resume" className="flex flex-col z-10 pb-10 bg-[#212529]">
                 <p className="text-white text-[40px] font-semibold text-center py-5">Resume</p>
@@ -240,7 +258,7 @@ export default function Home() {
                 </div>
             </div>
             <div id="" className="flex flex-row bg-black-100 justify-between">
-                <p className="ml-10 text-[15px] text-white py-8">© Copyright 2023 - Kyros by Designesia</p>
+                <p className="ml-10 text-[15px] text-white py-8">© Copyright 2023 - Anthony Kunitaro</p>
                 <div className="flex flex-row">
                     <p className="ml-10 text-[15px] text-white py-8 mr-10">All rights reserved.</p>
 
